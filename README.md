@@ -8,7 +8,7 @@ For Arch Linux and Zsh.
 
 ### Installation
 
-1. Place `zsh-noregerts.zsh` in ie. `~/.zsh/zsh-noregerts` and add this to `~/.zshrc`:
+1. `install -Dm644 zsh-noregerts.zsh ~/.zsh/zsh-noregerts/zsh-noregerts.zsh` and then add this to your `~/.zshrc`:
 
     source ~/.zsh/zsh-noregerts/zsh-noregerts.zsh
 
@@ -16,13 +16,10 @@ For Arch Linux and Zsh.
 
 ```
 % cowsay hi
+Checking if cowsay is available in the path...
 Updating files database...
-Checking if cowsay is available in the system...
 Checking if cowsay is available in the Arch Linux repositories...
-Checking package: extra/bash-completion
-Checking package: usr/share/bash-completion/completions/cowsay
-Checking package: extra/cowsay
-Package found: extra/cowsay
+Package found containing /usr/bin/cowsay: extra/cowsay
 Installing extra/cowsay...
 Running cowsay...
  ____
@@ -37,6 +34,6 @@ Running cowsay...
 
 ### General info
 
-* Version: 0.0.1
+* Version: 1.0.0
 * License: GPL2
 * Author: Alexander F. Rødseth <xyproto@archlinux.org>
