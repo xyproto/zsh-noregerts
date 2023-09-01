@@ -12,16 +12,30 @@ command_not_found() {
     fi
 
     echo "Checking if $1 is available in the Arch Linux repositories..."
-    package=$(LC_ALL=C pacman -F $1 2>/dev/null | grep '/bin/' | grep -m 1 -oP '^\S+')
-    if [ -z "$package" ]; then
+    packages=$(LC_ALL=C pacman -F $1 2>/dev/null | grep -oP '^\S+')
+    if [ -z "$packages" ]; then
         echo "Command '$1' not found, and no package found for installation."
         exit 1
     fi
 
-    echo "Package found: $package"
+    # iterate over each package and check if it contains /usr/bin file
+    package_found=""
+    for package in ${(f)packages}; do
+        if pacman -F -l $package | grep -q "/usr/bin/"; then
+            package_found=$package
+            break
+        fi
+    done
 
-    echo "Installing $package..."
-    sudo pacman -S --noconfirm $package >/dev/null
+    if [ -z "$package_found" ]; then
+        echo "Command '$1' not found, and no package found containing /usr/bin."
+        exit 1
+    fi
+
+    echo "Package found: $package_found"
+
+    echo "Installing $package_found..."
+    sudo pacman -S --noconfirm $package_found >/dev/null
 
     echo "Running $1..."
     exec $@

@@ -1,6 +1,10 @@
 # zsh-noregerts
 
-If a command is missing, install it automatically and then run it. For Arch Linux and Zsh.
+<img alt="no regerts tattoo" src="https://www.drduplechain.com/content/uploads/2019/07/no-regerts-tattoo-1.jpg.webp">
+
+If a command is missing, install it automatically and then run it.
+
+For Arch Linux and Zsh.
 
 ### Installation
 
@@ -12,6 +16,6 @@ If a command is missing, install it automatically and then run it. For Arch Linu
 
 ### General info
 
-* Version: 1.0.0
+* Version: 0.0.1
 * License: GPL2
 * Author: Alexander F. Rødseth <xyproto@archlinux.org>
