@@ -50,6 +50,6 @@ The next time `cowsay hi` is executed, it just runs as normal without calling an
 
 ### General info
 
-* Version: 1.0.0
 * License: GPL2
-* Author: Alexander F. Rødseth <xyproto@archlinux.org>
+* Author: Alexander F. Rødseth &lt;xyproto@archlinux.org&gt;
+* Version: 1.0.0
