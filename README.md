@@ -32,6 +32,21 @@ Running cowsay...
                 ||     ||
 ```
 
+The next time `cowsay hi` is executed, it just runs as normal without calling any code from the `zsh-noregerts.zsh` script:
+
+```
+% cowsay hi
+ ____
+< hi >
+ ----
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+
 ### General info
 
 * Version: 1.0.0
