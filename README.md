@@ -12,7 +12,7 @@ For Arch Linux and Zsh.
 
     source ~/.zsh/zsh-noregerts/zsh-noregerts.zsh
 
-Passwordless `sudo` access is recommended, but it's not a good practice, hence the name of the project: `zsh-noregerts`.
+Passwordless `sudo` access is recommended, but it's not good practice, hence the name of this project.
 
 ### Example use
 
