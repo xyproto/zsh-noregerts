@@ -14,6 +14,27 @@ For Arch Linux and Zsh.
 
 ### Example use
 
+```
+% cowsay hi
+Updating files database...
+Checking if cowsay is available in the system...
+Checking if cowsay is available in the Arch Linux repositories...
+Checking package: extra/bash-completion
+Checking package: usr/share/bash-completion/completions/cowsay
+Checking package: extra/cowsay
+Package found: extra/cowsay
+Installing extra/cowsay...
+Running cowsay...
+ ____
+< hi >
+ ----
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
 ### General info
 
 * Version: 0.0.1
