@@ -12,7 +12,7 @@ command_not_found() {
     fi
 
     echo "Checking if $1 is available in the Arch Linux repositories..."
-    package=$(LC_ALL=C pacman -F $1 2>/dev/null | grep /usr/bin/ | grep -m 1 -oP '^\S+')
+    package=$(LC_ALL=C pacman -F $1 2>/dev/null | grep '/bin/' | grep -m 1 -oP '^\S+')
     if [ -z "$package" ]; then
         echo "Command '$1' not found, and no package found for installation."
         exit 1
