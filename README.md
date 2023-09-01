@@ -12,6 +12,8 @@ For Arch Linux and Zsh.
 
     source ~/.zsh/zsh-noregerts/zsh-noregerts.zsh
 
+Passwordless `sudo` access is recommended, but it's not a good practice, hence the name of the project: `zsh-noregerts`.
+
 ### Example use
 
 ```
@@ -45,7 +47,6 @@ The next time `cowsay hi` is executed, it just runs as normal without calling an
                 ||----w |
                 ||     ||
 ```
-
 
 ### General info
 
