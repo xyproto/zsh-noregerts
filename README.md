@@ -8,7 +8,7 @@ For Arch Linux and Zsh.
 
 ### Installation
 
-1. `install -Dm644 zsh-noregerts.zsh ~/.zsh/zsh-noregerts/zsh-noregerts.zsh` and then add this to your `~/.zshrc`:
+Simply `install -Dm644 zsh-noregerts.zsh ~/.zsh/zsh-noregerts/zsh-noregerts.zsh` and then add this to your `~/.zshrc`:
 
     source ~/.zsh/zsh-noregerts/zsh-noregerts.zsh
 
