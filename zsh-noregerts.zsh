@@ -1,12 +1,6 @@
 #!/bin/zsh
 
 command_not_found() {
-    echo "Checking if $1 is available in the path..."
-    if command -v $1 >/dev/null 2>&1; then
-        echo "$1 is already installed"
-        exec $@
-    fi
-
     echo 'Updating files database...'
     sudo pacman -Fy --noconfirm >/dev/null 2>&1
 
@@ -29,11 +23,11 @@ command_not_found() {
     done
 
     if [ -z "$found_package" ]; then
-        echo "Command '$1' not found, and no package found containing /usr/bin/$1."
+        echo "Command '$1' not found, and no package found containing bin/$1."
         exit 1
     fi
 
-    echo "Package found containing /usr/bin/$1: $found_package"
+    echo "Package found containing bin/$1: $found_package"
 
     echo "Installing $found_package..."
     if ! sudo pacman -S --noconfirm $found_package >/dev/null 2>&1; then
