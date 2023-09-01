@@ -34,7 +34,7 @@ Running cowsay...
                 ||     ||
 ```
 
-The next time `cowsay hi` is executed, it just runs as normal without calling any code from the `zsh-noregerts.zsh` script:
+The next time `cowsay hi` is executed, the `command_not_found_handler` is not called and it just runs as normal:
 
 ```
 % cowsay hi
