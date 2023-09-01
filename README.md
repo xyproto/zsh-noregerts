@@ -4,7 +4,11 @@ If a command is missing, install it automatically and then run it. For Arch Linu
 
 ### Installation
 
-    make install
+1. Place `zsh-noregerts.zsh` in ie. `~/.zsh/zsh-noregerts` and add this to `~/.zshrc`:
+
+    source ~/.zsh/zsh-noregerts/zsh-noregerts.zsh
+
+### Example use
 
 ### General info
 
